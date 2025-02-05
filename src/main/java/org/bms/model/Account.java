@@ -16,5 +16,6 @@ public class Account {
     private  UUID     userId;
     private  Integer  accountNumber;
     private  Double   amount;
+    private  String   branch;
     private  Boolean  isDeleted;
 }

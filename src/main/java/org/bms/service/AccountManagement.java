@@ -4,7 +4,7 @@ import org.bms.model.Account;
 import org.bms.repository.AccountDB;
 
 public class AccountManagement {
-    private AccountDB data;
+    private final AccountDB data;
 
     public AccountManagement(AccountDB data) {
         this.data = data;
@@ -20,5 +20,9 @@ public class AccountManagement {
 
     public void searchAccount(Account account) {
         data.viewAccount(account);
+    }
+
+    public void updateAccount(Account account) {
+        data.updateAccount(account);
     }
 }

@@ -33,4 +33,10 @@ public class AccountDB {
 
         return true;
     }
+
+    public boolean updateAccount(Account account) {
+        accounts.remove(viewAccount(account));
+
+        return addAccount(account);
+    }
 }
